@@ -26,7 +26,7 @@ public static class CommandExtensions
 
     public static void Cancel<TIn>(
         this TIn obj,
-        ICommand<TIn> query)
+        ICancelledCommand<TIn> query)
     {
         query.Undo(obj);
     }
@@ -41,7 +41,7 @@ public static class CommandExtensions
 
     public static async Task Cancel<TIn>(
         this TIn obj,
-        IAsyncCommand<TIn> query,
+        IAsyncCancelledCommand<TIn> query,
         CancellationToken cancellationToken)
     {
         await query.UndoAsync(obj, cancellationToken);

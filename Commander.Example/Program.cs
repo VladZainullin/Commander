@@ -5,7 +5,7 @@ var coordinate = new Coordinate(0, 0);
 
 var unit = new Unit(coordinate);
 
-ICommand<Unit>[] commands =
+ICancelledCommand<Unit>[] commands =
 {
     new JumpCommand(5),
     new MoveCommand(1, 2)

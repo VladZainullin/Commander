@@ -9,11 +9,25 @@
     <projectFile>Commander.Example/Commander.Example.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="" />
+    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Commander.Core/IAsyncCancelledCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/CommandExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/CommandExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/IAsyncCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/IAsyncCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/ICommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Example/JumpCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Example/JumpCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Example/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Example/MoveCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Example/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Example/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8aa8f104f89c43f9883fc5ed68fb6628b55800/25/48799b01/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8aa8f104f89c43f9883fc5ed68fb6628b55800/65/37ce196d/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Commander.Core/IQuery.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -84,6 +98,7 @@
       <updated>1664398473062</updated>
       <workItem from="1664398479612" duration="671000" />
       <workItem from="1664399163059" duration="925000" />
+      <workItem from="1664559413094" duration="937000" />
     </task>
     <task id="LOCAL-00001" summary="#main Добавляет основные файлы библиотеки">
       <created>1664399242044</created>

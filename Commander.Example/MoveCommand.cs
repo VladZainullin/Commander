@@ -3,7 +3,7 @@ using Commander.Core;
 namespace Commander.Example;
 
 internal sealed class MoveCommand :
-    ICommand<Unit>
+    ICancelledCommand<Unit>
 {
     private readonly int _x;
     private readonly int _y;
@@ -21,7 +21,7 @@ internal sealed class MoveCommand :
             (obj.Coordinate, new Coordinate(obj.Coordinate!.Value.X + _x, obj.Coordinate!.Value.Y + _y));
     }
 
-    void ICommand<Unit>.Undo(Unit obj)
+    void ICancelledCommand<Unit>.Undo(Unit obj)
     {
         (_coordinate, obj.Coordinate) =
             (null, new Coordinate(obj.Coordinate!.Value.X - _x, obj.Coordinate!.Value.Y - _y));

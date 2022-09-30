@@ -3,7 +3,7 @@ using Commander.Core;
 namespace Commander.Example;
 
 internal sealed class JumpCommand :
-    ICommand<Unit>
+    ICancelledCommand<Unit>
 {
     private readonly int _height;
 
@@ -17,7 +17,7 @@ internal sealed class JumpCommand :
         obj.Coordinate = new Coordinate(obj.Coordinate!.Value.X, obj.Coordinate!.Value.Y + _height);
     }
 
-    void ICommand<Unit>.Undo(Unit obj)
+    void ICancelledCommand<Unit>.Undo(Unit obj)
     {
         obj.Coordinate = new Coordinate(obj.Coordinate!.Value.X, obj.Coordinate!.Value.Y - _height);
     }
