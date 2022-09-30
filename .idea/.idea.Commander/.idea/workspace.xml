@@ -9,21 +9,7 @@
     <projectFile>Commander.Example/Commander.Example.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Разделаяет команды на простые и отменяемые">
-      <change afterPath="$PROJECT_DIR$/Commander.Core/Commands/ICommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commander.Core/Extensions/AsyncCommandExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commander.Core/Extensions/AsyncQueryExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commander.Core/Extensions/CommandExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commander.Core/Extensions/QueryExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/CommandExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/IAsyncCancelledCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Commands/IAsyncCancelledCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/IAsyncCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Commands/IAsyncCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/IAsyncQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Queries/IAsyncQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Commands/ICancelledCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/IQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Queries/IQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Example/JumpCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Example/JumpCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Example/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Example/MoveCommand.cs" afterDir="false" />
+    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Распределяет методы расширения по структуре папок">
       <change beforePath="$PROJECT_DIR$/Commander.Example/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Example/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +97,7 @@
       <updated>1664398473062</updated>
       <workItem from="1664398479612" duration="671000" />
       <workItem from="1664399163059" duration="925000" />
-      <workItem from="1664559413094" duration="5587000" />
+      <workItem from="1664559413094" duration="6845000" />
     </task>
     <task id="LOCAL-00001" summary="#main Добавляет основные файлы библиотеки">
       <created>1664399242044</created>
@@ -134,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664560395552</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="#main Распределяет методы расширения по структуре папок">
+      <created>1664569073866</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664569073866</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +151,7 @@
     <MESSAGE value="#main Добавляет основные файлы библиотеки" />
     <MESSAGE value="#main Добавляет пример использования" />
     <MESSAGE value="#main Разделаяет команды на простые и отменяемые" />
-    <option name="LAST_COMMIT_MESSAGE" value="#main Разделаяет команды на простые и отменяемые" />
+    <MESSAGE value="#main Распределяет методы расширения по структуре папок" />
+    <option name="LAST_COMMIT_MESSAGE" value="#main Распределяет методы расширения по структуре папок" />
   </component>
 </project>

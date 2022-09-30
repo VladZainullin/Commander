@@ -12,10 +12,10 @@ ICancelledCommand<Unit>[] commands =
     new MoveCommand(1, 2)
 };
 
-foreach (var command in commands) unit.Action(command);
+unit.Action(commands);
 
 Console.WriteLine($"{unit.Coordinate?.X} : {unit.Coordinate?.Y}");
 
-foreach (var command in commands) unit.Cancel(command);
+unit.Cancel(commands);
 
 Console.WriteLine($"{unit.Coordinate?.X} : {unit.Coordinate?.Y}");
