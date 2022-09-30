@@ -1,4 +1,4 @@
-namespace Commander.Core;
+namespace Commander.Core.Queries;
 
 public interface IQuery<in TIn, out TOut>
 {

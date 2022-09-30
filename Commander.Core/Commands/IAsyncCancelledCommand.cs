@@ -1,4 +1,4 @@
-namespace Commander.Core;
+namespace Commander.Core.Commands;
 
 public interface IAsyncCancelledCommand<in TIn> : IAsyncCommand<TIn>
 {

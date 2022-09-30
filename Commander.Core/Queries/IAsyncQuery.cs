@@ -1,4 +1,4 @@
-namespace Commander.Core;
+namespace Commander.Core.Queries;
 
 public interface IAsyncQuery<in TIn, TOut>
 {

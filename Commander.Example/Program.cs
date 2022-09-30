@@ -1,4 +1,5 @@
-﻿using Commander.Core;
+﻿using Commander.Core.Commands;
+using Commander.Core.Extensions;
 using Commander.Example;
 
 var coordinate = new Coordinate(0, 0);

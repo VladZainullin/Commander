@@ -1,4 +1,4 @@
-using Commander.Core;
+using Commander.Core.Commands;
 
 namespace Commander.Example;
 
