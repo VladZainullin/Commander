@@ -9,9 +9,7 @@
     <projectFile>Commander.Example/Commander.Example.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Распределяет методы расширения по структуре папок">
-      <change beforePath="$PROJECT_DIR$/Commander.Example/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Example/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Дополняет пример, внесёнными изменениями" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,12 +25,15 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a4cb9591c21230d9be732f46914bf44e165d819809330102617bef23157b/ToCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Core/CommandExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Commander.Core/Queries/IQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Example/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FPf7WUJN4j8ywfzvNgyDb8K48h" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
   </component>
@@ -97,7 +98,7 @@
       <updated>1664398473062</updated>
       <workItem from="1664398479612" duration="671000" />
       <workItem from="1664399163059" duration="925000" />
-      <workItem from="1664559413094" duration="6845000" />
+      <workItem from="1664559413094" duration="7538000" />
     </task>
     <task id="LOCAL-00001" summary="#main Добавляет основные файлы библиотеки">
       <created>1664399242044</created>
@@ -127,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664569073866</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="#main Дополняет пример, внесёнными изменениями">
+      <created>1664569411638</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664569411638</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +160,7 @@
     <MESSAGE value="#main Добавляет пример использования" />
     <MESSAGE value="#main Разделаяет команды на простые и отменяемые" />
     <MESSAGE value="#main Распределяет методы расширения по структуре папок" />
-    <option name="LAST_COMMIT_MESSAGE" value="#main Распределяет методы расширения по структуре папок" />
+    <MESSAGE value="#main Дополняет пример, внесёнными изменениями" />
+    <option name="LAST_COMMIT_MESSAGE" value="#main Дополняет пример, внесёнными изменениями" />
   </component>
 </project>
