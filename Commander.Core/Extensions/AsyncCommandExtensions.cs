@@ -7,7 +7,7 @@ public static class AsyncCommandExtensions
     public static async Task ActionAsync<TIn>(
         this TIn obj,
         IAsyncCommand<TIn> command,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken = default)
     {
         await command.ExecuteAsync(obj, cancellationToken);
     }
@@ -15,7 +15,7 @@ public static class AsyncCommandExtensions
     public static async Task ActionAsync<TIn>(
         this IEnumerable<TIn> objects,
         IAsyncCommand<TIn> command,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken = default)
     {
         foreach (var obj in objects)
         {
@@ -26,7 +26,7 @@ public static class AsyncCommandExtensions
     public static async Task ActionAsync<TIn>(
         this TIn obj,
         IEnumerable<IAsyncCommand<TIn>> commands,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken = default)
     {
         foreach (var command in commands)
         {
@@ -37,7 +37,7 @@ public static class AsyncCommandExtensions
     public static async Task ActionAsync<TIn>(
         this IEnumerable<TIn> objects,
         IEnumerable<IAsyncCommand<TIn>> commands,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken = default)
     {
         var asyncCommands = commands as IAsyncCommand<TIn>[] ?? commands.ToArray();
         foreach (var obj in objects)
@@ -50,7 +50,7 @@ public static class AsyncCommandExtensions
     public static async Task CancelAsync<TIn>(
         this TIn obj,
         IAsyncCancelledCommand<TIn> query,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken = default)
     {
         await query.UndoAsync(obj, cancellationToken);
     }
@@ -58,7 +58,7 @@ public static class AsyncCommandExtensions
     public static async Task CancelAsync<TIn>(
         this IEnumerable<TIn> objects,
         IAsyncCancelledCommand<TIn> query,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken = default)
     {
         foreach (var obj in objects)
         {
@@ -69,7 +69,7 @@ public static class AsyncCommandExtensions
     public static async Task CancelAsync<TIn>(
         this TIn obj,
         IEnumerable<IAsyncCancelledCommand<TIn>> commands,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken = default)
     {
         foreach (var command in commands)
         {
@@ -80,7 +80,7 @@ public static class AsyncCommandExtensions
     public static async Task CancelAsync<TIn>(
         this IEnumerable<TIn> objects,
         IEnumerable<IAsyncCancelledCommand<TIn>> commands,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken = default)
     {
         var asyncCancelledCommands = commands as IAsyncCancelledCommand<TIn>[] ?? commands.ToArray();
         foreach (var obj in objects)

@@ -7,7 +7,7 @@ public static class AsyncQueryExtensions
     public static async Task<TOut> ActionAsync<TIn, TOut>(
         this TIn obj,
         IAsyncQuery<TIn, TOut> query,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken = default)
     {
         return await query.ExecuteAsync(obj, cancellationToken);
     }
