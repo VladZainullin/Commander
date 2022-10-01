@@ -3,8 +3,7 @@ using Commander.Core.Commands;
 namespace Commander.Example;
 
 internal sealed class JumpCommand :
-    ICancelledCommand<Unit>,
-    IAsyncCancelledCommand<Unit>
+    ICancelledCommand<Unit>
 {
     private readonly int _height;
 
@@ -21,19 +20,5 @@ internal sealed class JumpCommand :
     void ICancelledCommand<Unit>.Undo(Unit obj)
     {
         obj.Coordinate = new Coordinate(obj.Coordinate!.Value.X, obj.Coordinate!.Value.Y - _height);
-    }
-
-    async Task IAsyncCommand<Unit>.ExecuteAsync(Unit obj, CancellationToken cancellationToken)
-    {
-        obj.Coordinate = new Coordinate(obj.Coordinate!.Value.X, obj.Coordinate!.Value.Y + _height);
-        
-        await Task.FromResult(0);
-    }
-
-    async Task IAsyncCancelledCommand<Unit>.UndoAsync(Unit obj, CancellationToken cancellationToken)
-    {
-        obj.Coordinate = new Coordinate(obj.Coordinate!.Value.X, obj.Coordinate!.Value.Y - _height);
-
-        await Task.FromResult(0);
     }
 }

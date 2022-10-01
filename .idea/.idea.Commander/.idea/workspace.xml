@@ -9,9 +9,7 @@
     <projectFile>Commander.Example/Commander.Example.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Дополняет токены отмены значениями default" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +23,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8aa8f104f89c43f9883fc5ed68fb6628b55800/_b3ead/IList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8aa8f104f89c43f9883fc5ed68fb6628b55800/_efc3c/ICollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a4cb9591c21230d9be732f46914bf44e165d819809330102617bef23157b/ToCollection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Core/CommandExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ecdfa86eabbda4d23a0b68297d68e84c1adddb9ca2fda577ba181437343730/Where.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Core/Extensions/AsyncCommandExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Commander.Core/Queries/IQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Example/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -101,6 +100,7 @@
       <workItem from="1664398479612" duration="671000" />
       <workItem from="1664399163059" duration="925000" />
       <workItem from="1664559413094" duration="9401000" />
+      <workItem from="1664618270555" duration="387000" />
     </task>
     <task id="LOCAL-00001" summary="#main Добавляет основные файлы библиотеки">
       <created>1664399242044</created>
@@ -144,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664570151924</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#main Дополняет токены отмены значениями default">
+      <created>1664618648143</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664618648143</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +178,7 @@
     <MESSAGE value="#main Распределяет методы расширения по структуре папок" />
     <MESSAGE value="#main Дополняет пример, внесёнными изменениями" />
     <MESSAGE value="#main Изменяет значение токена отмены на default по умолчанию" />
-    <option name="LAST_COMMIT_MESSAGE" value="#main Изменяет значение токена отмены на default по умолчанию" />
+    <MESSAGE value="#main Дополняет токены отмены значениями default" />
+    <option name="LAST_COMMIT_MESSAGE" value="#main Дополняет токены отмены значениями default" />
   </component>
 </project>
