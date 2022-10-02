@@ -9,7 +9,11 @@
     <projectFile>Commander.Example/Commander.Example.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Дополняет токены отмены значениями default" />
+    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Дополняет токены отмены значениями default">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/Extensions/AsyncCommandExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Extensions/AsyncCommandExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/Extensions/CommandExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Extensions/CommandExtensions.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

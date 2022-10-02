@@ -45,18 +45,18 @@ public static class CommandExtensions
 
     public static void Cancel<TIn>(
         this TIn obj,
-        ICancelledCommand<TIn> query)
+        ICancelledCommand<TIn> command)
     {
-        query.Undo(obj);
+        command.Undo(obj);
     }
     
     public static void Cancel<TIn>(
         this IEnumerable<TIn> objects,
-        ICancelledCommand<TIn> query)
+        ICancelledCommand<TIn> command)
     {
         foreach (var obj in objects)
         {
-            query.Undo(obj);
+            command.Undo(obj);
         }
     }
     

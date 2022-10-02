@@ -49,20 +49,20 @@ public static class AsyncCommandExtensions
     
     public static async Task CancelAsync<TIn>(
         this TIn obj,
-        IAsyncCancelledCommand<TIn> query,
+        IAsyncCancelledCommand<TIn> command,
         CancellationToken cancellationToken = default)
     {
-        await query.UndoAsync(obj, cancellationToken);
+        await command.UndoAsync(obj, cancellationToken);
     }
     
     public static async Task CancelAsync<TIn>(
         this IEnumerable<TIn> objects,
-        IAsyncCancelledCommand<TIn> query,
+        IAsyncCancelledCommand<TIn> command,
         CancellationToken cancellationToken = default)
     {
         foreach (var obj in objects)
         {
-            await query.UndoAsync(obj, cancellationToken);
+            await command.UndoAsync(obj, cancellationToken);
         }
     }
 
