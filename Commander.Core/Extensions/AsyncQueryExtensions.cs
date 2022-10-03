@@ -9,6 +9,9 @@ public static class AsyncQueryExtensions
         IAsyncQuery<TIn, TOut> query,
         CancellationToken cancellationToken = default)
     {
+        if (obj == null) throw new ArgumentNullException(nameof(obj));
+        if (query == null) throw new ArgumentNullException(nameof(query));
+        
         return await query.ExecuteAsync(obj, cancellationToken);
     }
 }

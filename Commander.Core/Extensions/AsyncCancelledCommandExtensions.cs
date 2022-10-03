@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Commander.Core.Commands;
 using Commander.Core.Managers;
 
@@ -10,6 +11,9 @@ public static class AsyncCancelledCommandExtensions
         IAsyncCancelledCommand<TIn> command,
         CancellationToken cancellationToken = default)
     {
+        if (obj == null) throw new ArgumentNullException(nameof(obj));
+        if (command == null) throw new ArgumentNullException(nameof(command));
+        
         if (!CommandManager.Contains(obj, command))
             return;
 
@@ -23,6 +27,9 @@ public static class AsyncCancelledCommandExtensions
         IAsyncCancelledCommand<TIn> command,
         CancellationToken cancellationToken = default)
     {
+        if (objects == null) throw new ArgumentNullException(nameof(objects));
+        if (command == null) throw new ArgumentNullException(nameof(command));
+        
         foreach (var obj in objects)
         {
             if (!CommandManager.Contains(obj, command))
@@ -39,6 +46,9 @@ public static class AsyncCancelledCommandExtensions
         IEnumerable<IAsyncCancelledCommand<TIn>> commands,
         CancellationToken cancellationToken = default)
     {
+        if (obj == null) throw new ArgumentNullException(nameof(obj));
+        if (commands == null) throw new ArgumentNullException(nameof(commands));
+        
         foreach (var command in commands)
         {
             if (!CommandManager.Contains(obj, command))
@@ -55,6 +65,9 @@ public static class AsyncCancelledCommandExtensions
         IEnumerable<IAsyncCancelledCommand<TIn>> commands,
         CancellationToken cancellationToken = default)
     {
+        if (objects == null) throw new ArgumentNullException(nameof(objects));
+        if (commands == null) throw new ArgumentNullException(nameof(commands));
+        
         var asyncCancelledCommands = commands as IAsyncCancelledCommand<TIn>[] ?? commands.ToArray();
         foreach (var obj in objects)
         foreach (var command in asyncCancelledCommands)
