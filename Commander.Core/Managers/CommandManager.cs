@@ -2,12 +2,12 @@ using Commander.Core.Commands;
 
 namespace Commander.Core.Managers;
 
-internal static class CommandManager
+public static class CommandManager
 {
     private static readonly ICollection<(object obj, object command)> Commands =
         new List<(object obj, object command)>(10);
 
-    public static void Add<TIn>(
+    internal static void Add<TIn>(
         TIn obj,
         ICommand<TIn> command)
     {
@@ -17,7 +17,7 @@ internal static class CommandManager
         Commands.Add((obj, command));
     }
 
-    public static void Add<TIn>(
+    internal static void Add<TIn>(
         TIn obj,
         IAsyncCommand<TIn> command)
     {
@@ -27,7 +27,7 @@ internal static class CommandManager
         Commands.Add((obj, command));
     }
 
-    public static bool Contains<TIn>(
+    internal static bool Contains<TIn>(
         TIn obj,
         ICommand<TIn> command)
     {
@@ -37,7 +37,7 @@ internal static class CommandManager
         return Commands.Contains((obj, command));
     }
 
-    public static bool Contains<TIn>(
+    internal static bool Contains<TIn>(
         TIn obj,
         IAsyncCommand<TIn> command)
     {
@@ -47,7 +47,7 @@ internal static class CommandManager
         return Commands.Contains((obj, command));
     }
 
-    public static void Remove<TIn>(
+    internal static void Remove<TIn>(
         TIn obj,
         ICommand<TIn> command)
     {
@@ -57,7 +57,7 @@ internal static class CommandManager
         Commands.Remove((obj, command));
     }
 
-    public static void Remove<TIn>(
+    internal static void Remove<TIn>(
         TIn obj,
         IAsyncCommand<TIn> command)
     {
@@ -66,4 +66,6 @@ internal static class CommandManager
 
         Commands.Remove((obj, command));
     }
+
+    public static void Clear() => Commands.Clear();
 }
