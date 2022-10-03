@@ -12,11 +12,7 @@ public static class CancelledCommandExtensions
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        if (!CommandManager.Contains(obj, command))
-            return;
-
-        CommandManager.Remove(obj, command);
-        command.Undo(obj);
+        Undo(obj, command);
     }
 
     public static void Cancel<TIn>(
@@ -28,11 +24,7 @@ public static class CancelledCommandExtensions
 
         foreach (var obj in objects)
         {
-            if (!CommandManager.Contains(obj, command))
-                continue;
-
-            CommandManager.Remove(obj, command);
-            command.Undo(obj);
+            Undo(obj, command);
         }
     }
 
@@ -45,11 +37,7 @@ public static class CancelledCommandExtensions
 
         foreach (var command in commands)
         {
-            if (!CommandManager.Contains(obj, command))
-                continue;
-
-            CommandManager.Remove(obj, command);
-            command.Undo(obj);
+            Undo(obj, command);
         }
     }
 
@@ -65,11 +53,19 @@ public static class CancelledCommandExtensions
         foreach (var obj in objects)
         foreach (var command in cancelledCommands)
         {
-            if (!CommandManager.Contains(obj, command))
-                continue;
-
-            CommandManager.Remove(obj, command);
-            command.Undo(obj);
+            Undo(obj, command);
         }
+    }
+    
+    private static void Undo<TIn>(
+        TIn obj,
+        ICancelledCommand<TIn> command)
+    {
+        if (!CommandManager.Contains(obj, command))
+            return;
+
+        CommandManager.Remove(obj, command);
+
+        command.Undo(obj);
     }
 }

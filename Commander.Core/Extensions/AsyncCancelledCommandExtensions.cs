@@ -13,12 +13,7 @@ public static class AsyncCancelledCommandExtensions
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        if (!CommandManager.Contains(obj, command))
-            return;
-
-        CommandManager.Remove(obj, command);
-
-        await command.UndoAsync(obj, cancellationToken);
+        await UndoAsync(obj, command, cancellationToken);
     }
 
     public static async Task CancelAsync<TIn>(
@@ -31,12 +26,7 @@ public static class AsyncCancelledCommandExtensions
 
         foreach (var obj in objects)
         {
-            if (!CommandManager.Contains(obj, command))
-                continue;
-
-            CommandManager.Remove(obj, command);
-
-            await command.UndoAsync(obj, cancellationToken);
+            await UndoAsync(obj, command, cancellationToken);
         }
     }
 
@@ -50,12 +40,7 @@ public static class AsyncCancelledCommandExtensions
 
         foreach (var command in commands)
         {
-            if (!CommandManager.Contains(obj, command))
-                continue;
-
-            CommandManager.Remove(obj, command);
-
-            await command.UndoAsync(obj, cancellationToken);
+            await UndoAsync(obj, command, cancellationToken);
         }
     }
 
@@ -71,12 +56,20 @@ public static class AsyncCancelledCommandExtensions
         foreach (var obj in objects)
         foreach (var command in asyncCancelledCommands)
         {
-            if (!CommandManager.Contains(obj, command))
-                continue;
-
-            CommandManager.Remove(obj, command);
-
-            await command.UndoAsync(obj, cancellationToken);
+            await UndoAsync(obj, command, cancellationToken);
         }
+    }
+
+    private static async Task UndoAsync<TIn>(
+        TIn obj,
+        IAsyncCancelledCommand<TIn> command,
+        CancellationToken cancellationToken)
+    {
+        if (!CommandManager.Contains(obj, command))
+            return;
+
+        CommandManager.Remove(obj, command);
+
+        await command.UndoAsync(obj, cancellationToken);
     }
 }

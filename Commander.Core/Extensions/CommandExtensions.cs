@@ -12,8 +12,7 @@ public static class CommandExtensions
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        CommandManager.Add(obj, command);
-        command.Execute(obj);
+        Execute(obj, command);
     }
 
     public static void Action<TIn>(
@@ -25,8 +24,7 @@ public static class CommandExtensions
 
         foreach (var obj in objects)
         {
-            CommandManager.Add(obj, command);
-            command.Execute(obj);
+            Execute(obj, command);
         }
     }
 
@@ -39,8 +37,7 @@ public static class CommandExtensions
 
         foreach (var command in commands)
         {
-            CommandManager.Add(obj, command);
-            command.Execute(obj);
+            Execute(obj, command);
         }
     }
 
@@ -55,8 +52,15 @@ public static class CommandExtensions
         foreach (var obj in objects)
         foreach (var command in enumerable)
         {
-            CommandManager.Add(obj, command);
-            command.Execute(obj);
+            Execute(obj, command);
         }
+    }
+    
+    private static void Execute<TIn>(
+        TIn obj,
+        ICommand<TIn> command)
+    {
+        CommandManager.Add(obj, command);
+        command.Execute(obj);
     }
 }
