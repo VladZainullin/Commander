@@ -11,7 +11,7 @@ public static class CommandExtensions
     {
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
-        
+
         CommandManager.Add(obj, command);
         command.Execute(obj);
     }

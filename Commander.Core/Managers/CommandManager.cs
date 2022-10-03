@@ -67,5 +67,8 @@ public static class CommandManager
         Commands.Remove((obj, command));
     }
 
-    public static void Clear() => Commands.Clear();
+    public static void Clear()
+    {
+        Commands.Clear();
+    }
 }

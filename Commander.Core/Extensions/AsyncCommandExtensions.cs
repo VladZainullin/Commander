@@ -12,7 +12,7 @@ public static class AsyncCommandExtensions
     {
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
-        
+
         await command.ExecuteAsync(obj, cancellationToken);
     }
 
@@ -23,11 +23,8 @@ public static class AsyncCommandExtensions
     {
         if (objects == null) throw new ArgumentNullException(nameof(objects));
         if (command == null) throw new ArgumentNullException(nameof(command));
-        
-        foreach (var obj in objects)
-        {
-            await command.ExecuteAsync(obj, cancellationToken);
-        }
+
+        foreach (var obj in objects) await command.ExecuteAsync(obj, cancellationToken);
     }
 
     public static async Task ActionAsync<TIn>(
@@ -37,7 +34,7 @@ public static class AsyncCommandExtensions
     {
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (commands == null) throw new ArgumentNullException(nameof(commands));
-        
+
         foreach (var command in commands)
         {
             CommandManager.Add(obj, command);
@@ -52,9 +49,9 @@ public static class AsyncCommandExtensions
     {
         if (objects == null) throw new ArgumentNullException(nameof(objects));
         if (commands == null) throw new ArgumentNullException(nameof(commands));
-        
+
         var asyncCommands = commands as IAsyncCommand<TIn>[] ?? commands.ToArray();
-        
+
         foreach (var obj in objects)
         foreach (var command in asyncCommands)
         {

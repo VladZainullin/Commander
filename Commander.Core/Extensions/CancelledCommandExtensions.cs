@@ -11,7 +11,7 @@ public static class CancelledCommandExtensions
     {
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
-        
+
         if (!CommandManager.Contains(obj, command))
             return;
 
@@ -25,7 +25,7 @@ public static class CancelledCommandExtensions
     {
         if (objects == null) throw new ArgumentNullException(nameof(objects));
         if (command == null) throw new ArgumentNullException(nameof(command));
-        
+
         foreach (var obj in objects)
         {
             if (!CommandManager.Contains(obj, command))
@@ -42,7 +42,7 @@ public static class CancelledCommandExtensions
     {
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (commands == null) throw new ArgumentNullException(nameof(commands));
-        
+
         foreach (var command in commands)
         {
             if (!CommandManager.Contains(obj, command))
