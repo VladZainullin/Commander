@@ -12,8 +12,8 @@ public static class CancelledCommandExtensions
         if (!CommandManager.Contains(obj, command))
             return;
 
-        command.Undo(obj);
         CommandManager.Remove(obj, command);
+        command.Undo(obj);
     }
 
     public static void Cancel<TIn>(

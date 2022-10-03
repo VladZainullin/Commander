@@ -16,7 +16,7 @@ internal static class CommandManager
 
         Commands.Add((obj, command));
     }
-    
+
     public static void Add<TIn>(
         TIn obj,
         IAsyncCommand<TIn> command)
@@ -36,7 +36,7 @@ internal static class CommandManager
 
         return Commands.Contains((obj, command));
     }
-    
+
     public static bool Contains<TIn>(
         TIn obj,
         IAsyncCommand<TIn> command)
@@ -56,7 +56,7 @@ internal static class CommandManager
 
         Commands.Remove((obj, command));
     }
-    
+
     public static void Remove<TIn>(
         TIn obj,
         IAsyncCommand<TIn> command)

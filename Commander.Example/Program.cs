@@ -8,7 +8,7 @@ var unit = new Unit(coordinate);
 
 ICancelledCommand<Unit>[] commands =
 {
-    new JumpCommand(5),
+    new JumpCommand(5)
 };
 
 unit.Action(commands);

@@ -14,7 +14,7 @@ public static class AsyncCancelledCommandExtensions
             return;
 
         CommandManager.Remove(obj, command);
-        
+
         await command.UndoAsync(obj, cancellationToken);
     }
 
@@ -29,7 +29,7 @@ public static class AsyncCancelledCommandExtensions
                 continue;
 
             CommandManager.Remove(obj, command);
-            
+
             await command.UndoAsync(obj, cancellationToken);
         }
     }
@@ -45,7 +45,7 @@ public static class AsyncCancelledCommandExtensions
                 continue;
 
             CommandManager.Remove(obj, command);
-            
+
             await command.UndoAsync(obj, cancellationToken);
         }
     }
@@ -63,7 +63,7 @@ public static class AsyncCancelledCommandExtensions
                 continue;
 
             CommandManager.Remove(obj, command);
-            
+
             await command.UndoAsync(obj, cancellationToken);
         }
     }
