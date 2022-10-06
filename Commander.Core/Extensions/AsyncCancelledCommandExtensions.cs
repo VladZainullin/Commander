@@ -24,10 +24,7 @@ public static class AsyncCancelledCommandExtensions
         if (objects == null) throw new ArgumentNullException(nameof(objects));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        foreach (var obj in objects)
-        {
-            await UndoAsync(obj, command, cancellationToken);
-        }
+        foreach (var obj in objects) await UndoAsync(obj, command, cancellationToken);
     }
 
     public static async Task CancelAsync<TIn>(
@@ -38,10 +35,7 @@ public static class AsyncCancelledCommandExtensions
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (commands == null) throw new ArgumentNullException(nameof(commands));
 
-        foreach (var command in commands)
-        {
-            await UndoAsync(obj, command, cancellationToken);
-        }
+        foreach (var command in commands) await UndoAsync(obj, command, cancellationToken);
     }
 
     public static async Task CancelAsync<TIn>(
@@ -55,9 +49,7 @@ public static class AsyncCancelledCommandExtensions
         var asyncCancelledCommands = commands as IAsyncCancelledCommand<TIn>[] ?? commands.ToArray();
         foreach (var obj in objects)
         foreach (var command in asyncCancelledCommands)
-        {
             await UndoAsync(obj, command, cancellationToken);
-        }
     }
 
     private static async Task UndoAsync<TIn>(

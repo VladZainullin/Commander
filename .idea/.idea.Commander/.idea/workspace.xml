@@ -9,12 +9,8 @@
     <projectFile>Commander.Example/Commander.Example.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Изменяет example">
+    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/Extensions/AsyncCancelledCommandExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Extensions/AsyncCancelledCommandExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/Extensions/AsyncCommandExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Extensions/AsyncCommandExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/Extensions/CancelledCommandExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Extensions/CancelledCommandExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/Extensions/CommandExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Extensions/CommandExtensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8aa8f104f89c43f9883fc5ed68fb6628b55800/25/48799b01/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8aa8f104f89c43f9883fc5ed68fb6628b55800/65/37ce196d/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8aa8f104f89c43f9883fc5ed68fb6628b55800/ce/4cd66f21/Func`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e9a1ef53da164ffe96dc9079e2ab3ac894000/6e/5f6b8291/IIListProvider`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7a98896a49c4a516439161cc277f0b8bf2a80ccdd30e47a71d725f980fe8/Array.Enumerators.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8aa8f104f89c43f9883fc5ed68fb6628b55800/_50bf4/IReadOnlyCollection.cs" root0="SKIP_HIGHLIGHTING" />
@@ -31,11 +28,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8aa8f104f89c43f9883fc5ed68fb6628b55800/_efc3c/ICollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a4cb9591c21230d9be732f46914bf44e165d819809330102617bef23157b/ToCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ecdfa86eabbda4d23a0b68297d68e84c1adddb9ca2fda577ba181437343730/Where.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Core/Extensions/AsyncCancelledCommandExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Core/Extensions/AsyncCancelledCommandExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Core/Extensions/AsyncCancelledCommandExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Core/Extensions/CancelledCommandExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Commander.Core/Queries/IQuery.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/vadislavzainullin/MEGAsync/RiderProjects/Commander/Commander.Example/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

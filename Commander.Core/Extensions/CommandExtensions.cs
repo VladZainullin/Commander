@@ -22,10 +22,7 @@ public static class CommandExtensions
         if (objects == null) throw new ArgumentNullException(nameof(objects));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        foreach (var obj in objects)
-        {
-            Execute(obj, command);
-        }
+        foreach (var obj in objects) Execute(obj, command);
     }
 
     public static void Action<TIn>(
@@ -35,10 +32,7 @@ public static class CommandExtensions
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (commands == null) throw new ArgumentNullException(nameof(commands));
 
-        foreach (var command in commands)
-        {
-            Execute(obj, command);
-        }
+        foreach (var command in commands) Execute(obj, command);
     }
 
     public static void Action<TIn>(
@@ -51,11 +45,9 @@ public static class CommandExtensions
         var enumerable = commands as ICommand<TIn>[] ?? commands.ToArray();
         foreach (var obj in objects)
         foreach (var command in enumerable)
-        {
             Execute(obj, command);
-        }
     }
-    
+
     private static void Execute<TIn>(
         TIn obj,
         ICommand<TIn> command)

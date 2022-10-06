@@ -22,10 +22,7 @@ public static class CancelledCommandExtensions
         if (objects == null) throw new ArgumentNullException(nameof(objects));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        foreach (var obj in objects)
-        {
-            Undo(obj, command);
-        }
+        foreach (var obj in objects) Undo(obj, command);
     }
 
     public static void Cancel<TIn>(
@@ -35,10 +32,7 @@ public static class CancelledCommandExtensions
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (commands == null) throw new ArgumentNullException(nameof(commands));
 
-        foreach (var command in commands)
-        {
-            Undo(obj, command);
-        }
+        foreach (var command in commands) Undo(obj, command);
     }
 
     public static void Cancel<TIn>(
@@ -52,11 +46,9 @@ public static class CancelledCommandExtensions
 
         foreach (var obj in objects)
         foreach (var command in cancelledCommands)
-        {
             Undo(obj, command);
-        }
     }
-    
+
     private static void Undo<TIn>(
         TIn obj,
         ICancelledCommand<TIn> command)

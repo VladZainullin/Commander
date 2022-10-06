@@ -35,10 +35,7 @@ public static class AsyncCommandExtensions
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (commands == null) throw new ArgumentNullException(nameof(commands));
 
-        foreach (var command in commands)
-        {
-            await ExecuteAsync(obj, command, cancellationToken);
-        }
+        foreach (var command in commands) await ExecuteAsync(obj, command, cancellationToken);
     }
 
     public static async Task ActionAsync<TIn>(
@@ -53,9 +50,7 @@ public static class AsyncCommandExtensions
 
         foreach (var obj in objects)
         foreach (var command in asyncCommands)
-        {
             await ExecuteAsync(obj, command, cancellationToken);
-        }
     }
 
     private static async Task ExecuteAsync<TIn>(
