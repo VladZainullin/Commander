@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commander.Core", "Commander
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commander.Example", "Commander.Example\Commander.Example.csproj", "{69BFD434-7DE2-4C81-9E60-9F23EF06B907}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commander.Tests", "Commander.Tests\Commander.Tests.csproj", "{0896C2FA-AD19-4ADA-962B-55CDA760DB1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{69BFD434-7DE2-4C81-9E60-9F23EF06B907}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69BFD434-7DE2-4C81-9E60-9F23EF06B907}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69BFD434-7DE2-4C81-9E60-9F23EF06B907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0896C2FA-AD19-4ADA-962B-55CDA760DB1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0896C2FA-AD19-4ADA-962B-55CDA760DB1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0896C2FA-AD19-4ADA-962B-55CDA760DB1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0896C2FA-AD19-4ADA-962B-55CDA760DB1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
