@@ -3,7 +3,7 @@ using Commander.Core.Queries;
 
 namespace Commander.Tests;
 
-public class QueryTests
+public sealed class QueryTests
 {
     private class Item
     {

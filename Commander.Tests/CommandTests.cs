@@ -3,7 +3,7 @@ using Commander.Core.Extensions;
 
 namespace Commander.Tests;
 
-public class CommandTests
+public sealed class CommandTests
 {
     private class Account
     {

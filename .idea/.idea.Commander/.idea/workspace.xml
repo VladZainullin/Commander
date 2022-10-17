@@ -8,10 +8,7 @@
     <projectFile>Commander.Example/Commander.Example.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Добавляет тесты">
-      <change afterPath="$PROJECT_DIR$/Commander.Core/Managers/CommandLog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commander.Core/Managers/CommandManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Managers/CommandManager.cs" afterDir="false" />
-    </list>
+    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Изменяет логирование истории применения команд" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +106,7 @@
       <workItem from="1664788962236" duration="5915000" />
       <workItem from="1665077145413" duration="107000" />
       <workItem from="1665869493756" duration="943000" />
-      <workItem from="1666032288684" duration="3465000" />
+      <workItem from="1666032288684" duration="3816000" />
     </task>
     <task id="LOCAL-00001" summary="#main Добавляет основные файлы библиотеки">
       <created>1664399242044</created>
@@ -216,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666035011606</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="#main Изменяет логирование истории применения команд">
+      <created>1666035965765</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666035965765</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +255,7 @@
     <MESSAGE value="#main Изменяет example" />
     <MESSAGE value="#main Чистка проекта" />
     <MESSAGE value="#main Добавляет тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="#main Добавляет тесты" />
+    <MESSAGE value="#main Изменяет логирование истории применения команд" />
+    <option name="LAST_COMMIT_MESSAGE" value="#main Изменяет логирование истории применения команд" />
   </component>
 </project>
