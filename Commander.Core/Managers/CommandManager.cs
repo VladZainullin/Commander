@@ -4,8 +4,8 @@ namespace Commander.Core.Managers;
 
 public static class CommandManager
 {
-    private static readonly ICollection<(object obj, object command)> Commands =
-        new List<(object obj, object command)>(10);
+    private static readonly ICollection<CommandLog> Commands =
+        new List<CommandLog>(10);
 
     internal static void Add<TIn>(
         TIn obj,
@@ -14,7 +14,7 @@ public static class CommandManager
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        Commands.Add((obj, command));
+        Commands.Add(new CommandLog(obj, command));
     }
 
     internal static void Add<TIn>(
@@ -24,7 +24,7 @@ public static class CommandManager
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        Commands.Add((obj, command));
+        Commands.Add(new CommandLog(obj, command));
     }
 
     internal static bool Contains<TIn>(
@@ -34,7 +34,7 @@ public static class CommandManager
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        return Commands.Contains((obj, command));
+        return Commands.Contains(new CommandLog(obj, command));
     }
 
     internal static bool Contains<TIn>(
@@ -44,7 +44,7 @@ public static class CommandManager
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        return Commands.Contains((obj, command));
+        return Commands.Contains(new CommandLog(obj, command));
     }
 
     internal static void Remove<TIn>(
@@ -54,7 +54,7 @@ public static class CommandManager
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        Commands.Remove((obj, command));
+        Commands.Remove(new CommandLog(obj, command));
     }
 
     internal static void Remove<TIn>(
@@ -64,7 +64,7 @@ public static class CommandManager
         if (obj == null) throw new ArgumentNullException(nameof(obj));
         if (command == null) throw new ArgumentNullException(nameof(command));
 
-        Commands.Remove((obj, command));
+        Commands.Remove(new CommandLog(obj, command));
     }
 
     public static void Clear()
