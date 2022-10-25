@@ -5,46 +5,6 @@ namespace Commander.Tests;
 
 public sealed class CommandTests
 {
-    private class Account
-    {
-        public Account(decimal value)
-        {
-            Value = value;
-        }
-
-        public decimal Value { get; set; }
-    }
-
-    private class FillingUpAccount : ICommand<Account>
-    {
-        private readonly decimal _value;
-
-        public FillingUpAccount(decimal value)
-        {
-            _value = value;
-        }
-
-        void ICommand<Account>.Execute(Account obj)
-        {
-            obj.Value += _value;
-        }
-    }
-
-    private class MovedMoneyOutOfAccount : ICommand<Account>
-    {
-        private readonly decimal _value;
-
-        public MovedMoneyOutOfAccount(decimal value)
-        {
-            _value = value;
-        }
-
-        void ICommand<Account>.Execute(Account obj)
-        {
-            obj.Value -= _value;
-        }
-    }
-
     [Fact]
     public void UseCommandForObjectTest()
     {
@@ -68,13 +28,10 @@ public sealed class CommandTests
         {
             new MovedMoneyOutOfAccount(20),
             new FillingUpAccount(30),
-            new MovedMoneyOutOfAccount(60),
+            new MovedMoneyOutOfAccount(60)
         };
 
-        foreach (var command in commands)
-        {
-            account.Action(command);
-        }
+        foreach (var command in commands) account.Action(command);
 
         Assert.Equal(50, account.Value);
     }
@@ -119,5 +76,45 @@ public sealed class CommandTests
         Assert.Equal(155, accounts[0].Value);
         Assert.Equal(1055, accounts[1].Value);
         Assert.Equal(105, accounts[2].Value);
+    }
+
+    private sealed class Account
+    {
+        public Account(decimal value)
+        {
+            Value = value;
+        }
+
+        public decimal Value { get; set; }
+    }
+
+    private sealed class FillingUpAccount : ICommand<Account>
+    {
+        private readonly decimal _value;
+
+        public FillingUpAccount(decimal value)
+        {
+            _value = value;
+        }
+
+        void ICommand<Account>.Execute(Account obj)
+        {
+            obj.Value += _value;
+        }
+    }
+
+    private class MovedMoneyOutOfAccount : ICommand<Account>
+    {
+        private readonly decimal _value;
+
+        public MovedMoneyOutOfAccount(decimal value)
+        {
+            _value = value;
+        }
+
+        void ICommand<Account>.Execute(Account obj)
+        {
+            obj.Value -= _value;
+        }
     }
 }

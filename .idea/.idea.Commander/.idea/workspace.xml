@@ -8,7 +8,10 @@
     <projectFile>Commander.Example/Commander.Example.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="#main Изменяет логирование истории применения команд" />
+    <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/Managers/CommandLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Managers/CommandLog.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +110,8 @@
       <workItem from="1665077145413" duration="107000" />
       <workItem from="1665869493756" duration="943000" />
       <workItem from="1666032288684" duration="3816000" />
+      <workItem from="1666555426510" duration="123000" />
+      <workItem from="1666639217577" duration="1219000" />
     </task>
     <task id="LOCAL-00001" summary="#main Добавляет основные файлы библиотеки">
       <created>1664399242044</created>
