@@ -11,6 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="67b9e41b-9921-4a82-b7cf-b99589879aea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Commander/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/Commands/IAsyncCancelledCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Commands/IAsyncCancelledCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/Commands/IAsyncCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Commands/IAsyncCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/Commands/ICancelledCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Commands/ICancelledCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commander.Core/Commands/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Commander.Core/Commands/ICommand.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +121,8 @@
       <workItem from="1666555426510" duration="123000" />
       <workItem from="1666639217577" duration="13540000" />
       <workItem from="1667672740936" duration="598000" />
-      <workItem from="1667759019446" duration="2411000" />
+      <workItem from="1667759019446" duration="3292000" />
+      <workItem from="1668195159648" duration="1548000" />
     </task>
     <task id="LOCAL-00001" summary="#main Добавляет основные файлы библиотеки">
       <created>1664399242044</created>
@@ -252,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666817234729</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="#main Добавляет возможность автокаррирования функций">
+      <created>1667940708957</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667940708957</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +303,7 @@
     <MESSAGE value="#main Небольшие правки" />
     <MESSAGE value="#main Добавkztn методы расширения для создания pipeline" />
     <MESSAGE value="#main Добавляет асинхронные версии методов расширения для построения pipeline" />
-    <option name="LAST_COMMIT_MESSAGE" value="#main Добавляет асинхронные версии методов расширения для построения pipeline" />
+    <MESSAGE value="#main Добавляет возможность автокаррирования функций" />
+    <option name="LAST_COMMIT_MESSAGE" value="#main Добавляет возможность автокаррирования функций" />
   </component>
 </project>
