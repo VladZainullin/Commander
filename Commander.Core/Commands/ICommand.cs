@@ -3,7 +3,7 @@ namespace Commander.Core.Commands;
 /// <summary>
 /// Асинхронная команда
 /// </summary>
-/// <typeparam name="TIn">Тип объекта выполнения команды</typeparam>
+/// <typeparam name="TIn">Тип параметра команды</typeparam>
 public interface ICommand<in TIn>
 {
     /// <summary>

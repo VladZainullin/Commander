@@ -3,7 +3,7 @@ namespace Commander.Core.Commands;
 /// <summary>
 /// Отменяемая команда
 /// </summary>
-/// <typeparam name="TIn">Тип объекта выполнения команды</typeparam>
+/// <typeparam name="TIn">Тип параметра команды</typeparam>
 public interface ICancelledCommand<in TIn> : ICommand<TIn>
 {
     /// <summary>

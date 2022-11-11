@@ -3,7 +3,7 @@ namespace Commander.Core.Commands;
 /// <summary>
 /// Асинхронная отменяемая команда
 /// </summary>
-/// <typeparam name="TIn">Тип объекта выполнения команды</typeparam>
+/// <typeparam name="TIn">Тип параметра команды</typeparam>
 public interface IAsyncCancelledCommand<in TIn> : IAsyncCommand<TIn>
 {
     /// <summary>
